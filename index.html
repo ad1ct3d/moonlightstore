@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="page-slider">
+        <header>
+          <label for="slide-1-trigger">Moonlight</label>
+          <label for="slide-2-trigger">Tienda</label>
+          <label for="slide-3-trigger">Contacto</label>
+          <label for="slide-4-trigger">FAQ</label>
+          <label for="slide-5-trigger">About us</label>
+        </header>
+
+
+        <input id="slide-1-trigger" type="radio" name="slides" checked>
+        <section class="slide slide-one">
+          <h1 id="logo">Moonlight</h1>
+          <h2>- Dados artesanales -</h2>
+
+           <header class="header">
+    <h1 class="title"> Moonlight </h1>
+
+    </header>
+    <main class="main ">
+ 
+    </main>
+
+
+
+
+        </section>
+        <input id="slide-2-trigger" type="radio" name="slides">
+        <section class="slide slide-two">
+          <h1>Tienda</h1>
+          <header class="header">
+            <h1 class="title">Tienda</h1>
+           
+        </header>
+        <main class="store">
+    
+            <ul class="products__list">
+                <li>
+                    <div class="products__container">
+                      <div class="card">
+                        <img src="img/miniature.jpg" alt="" style="width:100%">
+                        <h6 class="product__title">Golden elf</h6>
+                        <p class="price">$xxxx</p>
+                        <p><button>Comprar</button></p>
+                      </div>
+                    </div>
+                </li>
+        
+                <li>
+                    <div class="products__container">
+                        <div class="card">
+                          <img src="img/monstruo.jpg" alt="" style="width:100%">
+                          <h6 class="product__title">Limb Taker</h6>
+                          <p class="price">$xxxx</p>
+                          <p><button>Comprar</button></p>
+                        </div>
+                      </div>
+                </li>
+                
+                <li>
+                    <div class="products__container">
+                        <div class="card">
+                          <img src="img/rata.jpg" alt="" style="width:100%">
+                          <h6 class="product__title">Big roddent</h6>
+                          <p class="price">$xxxx</p>
+                          <p><button>Comprar</button></p>
+                        </div>
+                      </div>
+                </li>
+        
+                <li>
+                    <div class="products__container">
+                        <div class="card">
+                          <img src="img/tremendo.jpg" alt="" style="width:100%">
+                          <h6 class="product__title">Hell Pirate</h6>
+                          <p class="price">$xxxx</p>
+                          <p><button>Comprar</button></p>
+                        </div>
+                      </div>
+                </li>
+        
+                <li>
+                    <div class="products__container">
+                        <div class="card">
+                          <img src="img/warhammer.jpg" alt="" style="width:100%">
+                          <h6 class="product__title">Marine azul</h6>
+                          <p class="price">$xxxx</p>
+                          <p><button>Comprar</button></p>
+                        </div>
+                      </div>
+                </li>
+        
+                <li>
+                    <div class="products__container">
+                        <div class="card">
+                          <img src="img/viejo.jpg" alt="" style="width:100%">
+                          <h6 class="product__title">cyber-vikingo</h6>
+                          <p class="price">$xxxx</p>
+                          <p><button>Comprar</button></p>
+                        </div>
+                      </div>
+                </li>
+        
+                <li>
+                    <div class="products__container">
+                        <div class="card">
+                          <img src="img/franco.jpg" alt="" style="width:100%">
+                          <h6 class="product__title">Dead eye</h6>
+                          <p class="price">$xxxx</p>
+                          <p><button>Comprar</button></p>
+                        </div>
+                      </div>
+                </li>       
+        </ul>
+        </main>
+    
+
+       </section>
+
+
+
+
+
+        <input id="slide-3-trigger" type="radio" name="slides">
+        <section class="slide slide-three">
+          <h1>Contacto</h1>
+          <div class="formulario">
+            <form action="enviar.php" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <h3 class="tituloFormulario">Envianos tu mensaje</h3>
+                    <br>
+          
+          
+                <label for="nombreyapellido">Nombre y apellido</label>
+                <input type="text" name="nombreyapellido" maxlength="40">
+                <br>
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" maxlength="60">
+                <br>
+                <br>
+                <label for="message"></label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+              <br>
+                <input type="submit" name="submit" value="enviar">
+                </fieldset>
+          
+          
+            </form>
+          </div>
+        </section>
+
+        <input id="slide-4-trigger" type="radio" name="slides">
+        <section class="slide slide-three">
+                <h1>FAQ</h1>
+                <h1 class="faq__title">Preguntas frecuentes</h1>
+            <h3 class="faq__question">pregunta?</h3>
+            <br>
+            <p class="faq__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, corporis.</p>
+        </section>
+
+
+
+        <input id="slide-5-trigger" type="radio" name="slides">
+        <section class="slide slide-three">
+        <div class="aboutUs__container">
+          <h1>Nosotros</h1>     
+          <h3 class="aboutUs__container--titles">stl licenciadas</h3>
+          <p>Usamos archivos de artistas 3d, dando un detalle ecepcional a nuestro producto</p> <!--algo asi pero bien redactado-->	
+          <br>
+          <h3 class="aboutUs__container--titles">Al alcance de tu bolsillo</h3>
+          <p>Gracias al uso de impresoras 3D podemos ofrecer figuras de gran calidad y detalle a un precio bueno</p> <!--algo asi pero bien redactado-->	
+          <br>
+          <h3 class="aboutUs__container--titles">Personalizable</h3>
+          <p>Ofrecemos un servicio personalizado, diferentes tamaños, dados artesanales completamente únicos, etc</p>
+        </div>
+      
+        </section>
+
+
+
+
+
+
+      </div>
+
+    
+</body>
+</html>
