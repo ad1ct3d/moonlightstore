@@ -18,7 +18,7 @@ html, body {
   }
 
   header {
-    background: #3e474f;
+    background: #650db8;
     box-shadow: 0 0.5em 1em #111;
     position: absolute;
     top: 0;
@@ -28,16 +28,20 @@ html, body {
   }
   
   header label {
-    color: #788188;
+    color: white;
     cursor: pointer;
     display: inline-block;
     line-height: 4.25em;
     font-size: 1em;
     font-weight: bold;
     padding: 0 1em;
+    transition: 0.5s;
   }
   
-  header label:hover { background: #2e353b; }
+  header label:hover {
+    background: #8859F7;
+    transition: 0.5s;
+  }
 
   .slide {
     height: 100vh;
@@ -65,7 +69,9 @@ html, body {
     transition: all 0.5s 0.5s;
   }
 
-  .slide-one { background-image: url(../img/greendiceset.jpg); }
+  .slide-one { 
+    background-image: url(../img/greendicesetowahsed.jpg); 
+  }
 
 .slide-two { 
   background-image: url(bg2.jpg);
