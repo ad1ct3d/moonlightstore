@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonts & icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page-slider">
-        <header>
+        <header class="navbar">
           <label for="slide-1-trigger">Moonlight</label>
           <label for="slide-2-trigger">Tienda</label>
           <label for="slide-3-trigger">Contacto</label>
@@ -23,7 +28,7 @@
           <label for="slide-5-trigger">About us</label>
         </header>
 
-
+            <!-- ----HOME---- -->
         <input id="slide-1-trigger" type="radio" name="slides" checked>
         <section class="slide slide-one">
           <h1 id="logo">Moonlight</h1>
@@ -35,11 +40,17 @@
              <main class="main ">
  
              </main>
+             <footer class="footer">
+              <div class="footer-container">
+                <a href="#" class="fa fa-instagram instagram"></a>
+                
+              </div>
+            </footer>
         </section>
+          <!-- ----HOME END---- -->
 
 
-
-
+          <!-- ----STORE---- -->
         <input id="slide-2-trigger" type="radio" name="slides">
         <section class="slide slide-two">
           <h1>Tienda</h1>
@@ -129,17 +140,23 @@
                 </li>       
         </ul>
         </main>
+        <footer class="footer">
+          <div class="footer-container">
+            <a href="#" class="fa fa-instagram instagram"></a>
+            
+          </div>
+        </footer>
     
 
        </section>
+        <!-- ----STORE END---- -->
 
 
 
-
-
+        <!-- ----CONTACT---- -->
         <input id="slide-3-trigger" type="radio" name="slides">
         <section class="slide slide-three">
-          <h1>Contacto</h1>
+          <h1 class="contact-title">Contacto</h1>
           <div class="formulario">
             <form action="enviar.php" method="POST" enctype="multipart/form-data">
                 <fieldset>
@@ -164,7 +181,17 @@
           
             </form>
           </div>
+          <footer class="footer">
+            <div class="footer-container">
+              <a href="#" class="fa fa-instagram instagram"></a>
+              
+            </div>
+          </footer>
         </section>
+        <!-- ----CONTACT END---- -->
+
+
+        <!-- FAQ -->
 
         <input id="slide-4-trigger" type="radio" name="slides">
         <section class="slide slide-three">
@@ -173,25 +200,72 @@
             <h3 class="faq__question">pregunta?</h3>
             <br>
             <p class="faq__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, corporis.</p>
+            <footer class="footer">
+              <div class="footer-container">
+                <a href="#" class="fa fa-instagram instagram"></a>
+                
+              </div>
+            </footer>
         </section>
+        <!-- ----FAQ END---- -->
 
 
-
+          <!-- ----ABOUT US---- -->
         <input id="slide-5-trigger" type="radio" name="slides">
-        <section class="slide slide-three">
+        <section class="slide slide-five">
         <div class="aboutUs__container">
-          <h1>Nosotros</h1>     
-          <h3 class="aboutUs__container--titles">stl licenciadas</h3>
-          <p>Usamos archivos de artistas 3d, dando un detalle ecepcional a nuestro producto</p> <!--algo asi pero bien redactado-->	
-          <br>
-          <h3 class="aboutUs__container--titles">Al alcance de tu bolsillo</h3>
-          <p>Gracias al uso de impresoras 3D podemos ofrecer figuras de gran calidad y detalle a un precio bueno</p> <!--algo asi pero bien redactado-->	
-          <br>
-          <h3 class="aboutUs__container--titles">Personalizable</h3>
-          <p>Ofrecemos un servicio personalizado, diferentes tamaños, dados artesanales completamente únicos, etc</p>
+          <div class="container">
+            <div class="card-about">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/3dPrinter.png">
+                        <h3>Impresiones 3D</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Fabricamos nuestros moldes nosotros mismos en nuestro taller, facilitando traer nuevos diseños regularmente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-about">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/design.png">
+                        <h3>Diseños únicos</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Tenemos como objetivo traer los dados más originales que podamos, pero si no es suficiente te podes poner en contacto para pedirnos tus dados personalizados ;)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-about">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/shipping.png">
+                        <h3>Al alcance de tod@s</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Queremos que puedas tener tus dados, no importa donde estés. Por esto trabajamos con varios medios de envío, garantizando envíos a todo el país.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-container">
+            <a href="#" class="fa fa-instagram instagram"></a>
+            
+          </div>
+        </footer>
       
         </section>
+        <!-- ----ABOUT US END---- -->
 
 
 
