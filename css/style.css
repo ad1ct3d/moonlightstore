@@ -70,10 +70,6 @@ html, body {
     transition: all 0.5s 0.5s;
   }
 
-  .slide-one { 
-   
-  }
-
 .slide-two { 
   background-image: url(bg2.jpg);
   overflow-y: scroll;
@@ -312,9 +308,7 @@ body
 }
 
 /*footer*/
-footer {
 
-}
 
 .footer-container__store {
   position: relative;
