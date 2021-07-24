@@ -8,6 +8,9 @@
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
     <title>Moonlight</title>
 </head>
 
@@ -84,21 +87,62 @@
 
     </div>
 
-    <div id="grid-footer" class="cell-1">
-        <div class="footer">
-            <div class="formContainer">  
-                <form class="contactForm">
-                    <label for="completeName">Nombre Completo</label>
-                    <input type="text" id="completeName" name="completeName">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                    <label for="message">Dejanos tu mensaje!</label>
-                    <input type="text" id="message" name="message">
-                </form>
-            </div>
-            
-        </dv>
+    <div id="grid-contact" class="cell-1">
+        <div class="container-contact">
+            <form action="enviar.php" method="POST" name="contact-form">
+                <div class="container">
+                    <div class="row">
+                            <h1>Ponete en contacto!</h1>
+                    </div>
+                    <div class="row">
+                            <h4 style="text-align:center">Dejanos tu mensaje :)</h4>
+                    </div>
+                    <div class="row input-container">
+                            <div class="col-xs-12">
+                                <div class="styled-input wide">
+                                    <input type="text" required />
+                                    <label>Nombre</label> 
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="styled-input">
+                                    <input type="text" required />
+                                    <label>Email</label> 
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="styled-input" style="float:right;">
+                                    <input type="text" required />
+                                    <label>numero de telefono</label> 
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="styled-input wide">
+                                    <textarea required></textarea>
+                                    <label>Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="btn-lrg submit-btn">Enviar</div>
+                            </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
     </div>
+<div class="footer">
+</div>
+    <div id="grid-footer" class="cell-1">
+            <div class="footer-real">
+                FOOTER
+            </div>
+    </div>
+
+</div>
+<!--FOOTER FALSO-->
+<div class="footer">
+
 
 </body>
 </html>
