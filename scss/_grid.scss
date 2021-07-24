@@ -37,9 +37,21 @@
     font-size: 18px;
   }
 
+  /* CONTACT */
+  #grid-contact > div {
+    height: 1000px;
+    width: 100%;
+    background: nth($colores, 3);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+  }
+
   /* STORE */
   #grid-store > div{
-    height: 1000px;
+    height: 100%;
     background: nth($colores, 3);
     border: 1px solid #aaa;
     box-sizing: border-box;
@@ -50,7 +62,7 @@
   /* GALERIA */
 
   #grid-gallery > div{
-    height: 100px;
+    height: 100%;
     background: nth($colores, 3);
     border: 1px solid #aaa;
     box-sizing: border-box;
@@ -69,7 +81,7 @@
     box-sizing: border-box;
     float: left;
     font-size: 20px;
-    position: static;
+    position: relative;
     bottom: 0;
   }
 
