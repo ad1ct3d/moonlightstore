@@ -1,0 +1,45 @@
+@use 'sass:math';
+@import 'colors';
+@import 'cards';
+@import 'grid';
+@import 'flex';
+@import 'footer';
+@import 'nav';
+
+/*RESET*/
+body, html {
+  margin:0;
+  padding: 0;
+  max-width: 100%;
+}
+
+
+
+.navBtn {
+  text-decoration: none;
+  color: nth($colores, 5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section_about {
+  @extend %flexRow;
+
+}
+
+/*RESPONSIVE*/
+
+$breakpoint-phone: 600px;
+@media (min-width: $breakpoint-phone) {
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+  
+
+
+
+
+
+

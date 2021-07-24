@@ -1,0 +1,107 @@
+/*GRID*/
+
+    /* NAVBAR */
+
+#grid > div {
+    height: 60px;
+    background: nth($colores, 4);
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /*HOME*/
+  
+  #grid-main > div {
+    height: 600px;
+    background: nth($colores, 3);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* CONTENIDO */
+  
+  #grid-productos > div {
+    height: 500px;
+    background: nth($colores, 3);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  /* STORE */
+  #grid-store > div{
+    height: 1000px;
+    background: nth($colores, 3);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+  }
+  /* GALERIA */
+
+  #grid-gallery > div{
+    height: 100px;
+    background: nth($colores, 3);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* FOOTER */
+
+  #grid-footer > div {
+    height: 300px;
+    background: darken(nth($colores, 4), 20%);
+    color: white;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    font-size: 20px;
+    position: static;
+    bottom: 0;
+  }
+
+  /* CALCULOS */
+
+  $max: 3;
+  
+  @for $i from 1 through $max {
+  
+    $equ: math.div(100%, $i);
+  
+    #grid.cell-#{ $i } > div {
+      width: $equ;
+    }
+  
+    #grid-main.cell-#{ $i } > div {
+      width: $equ;
+    }
+  
+    #grid-productos.cell-#{ $i } > div {
+      width: $equ;
+    }
+
+    #grid-store.cell-#{ $i } > div {
+        width: $equ;
+      }
+
+    #grid-gallery.cell-#{ $i } > div {
+        width: $equ;
+    }
+  
+    #grid-footer.cell-#{ $i } > div {
+      width: $equ;
+    }
+  }    

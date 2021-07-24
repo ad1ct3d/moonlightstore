@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: nth($colores, 4);
+    .formContainer {
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 100px;
+        height: 270px;
+    }
+}
+

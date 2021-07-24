@@ -1,0 +1,11 @@
+.gallery-container {
+    @extend %flexRow;
+}
+
+.gallery {
+    padding: 10px;
+}
+
+.description {
+    text-align: center;
+}
