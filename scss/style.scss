@@ -32,12 +32,30 @@ body, html {
 /*RESPONSIVE*/
 
 $breakpoint-phone: 600px;
-@media (min-width: $breakpoint-phone) {
+@media (max-width: $breakpoint-phone) {
   .about{
     display: flex;
     flex-direction: column;
   }
+  /*cards responsive*/
+  #grid-productos > div {
+    height: 1200px;
+  }
 
+  .container-about {
+    justify-content: center
+  }
+
+}
+
+
+.img {
+  @extend %flexCenter;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
 }
   
 

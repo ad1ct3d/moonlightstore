@@ -1,9 +1,13 @@
+/*PALETA DE COLORES*/
+/*GRADIENTES*/
+/*compatibilidad*/
 /*about us*/
 .container-about {
   width: 1000px;
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .container-about .card-about {
@@ -93,7 +97,6 @@
 /* NAVBAR */
 #grid > div {
   height: 60px;
-  background: #650db8;
   box-sizing: border-box;
   float: left;
   text-align: center;
@@ -109,8 +112,6 @@
   float: left;
   text-align: center;
   font-size: 30px;
-  padding-left: 50px;
-  margin-right: 50px;
 }
 
 /* CONTENIDO */
@@ -160,8 +161,23 @@
 
 /* FOOTER */
 #grid-footer > div {
-  height: 300px;
-  background: #310659;
+  height: 150px;
+  /* fallback/image non-cover color */
+  background-color: black;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, black 0%, #650db8 100%);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, black), color-stop(100%, #650db8));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, black 0%, #650db8 100%);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, black 0%, #650db8 100%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, black 0%, #650db8 100%);
+  /* Standard */
+  background: linear-gradient(to right, black 0%, #650db8 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
   color: white;
   border: 1px solid #aaa;
   box-sizing: border-box;
@@ -249,6 +265,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.img {
+  display: felx;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-real {
@@ -701,11 +723,24 @@ body, html {
 }
 
 /*RESPONSIVE*/
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .about {
     display: flex;
     flex-direction: column;
   }
+
+  /*cards responsive*/
+  #grid-productos > div {
+    height: 1200px;
+  }
+
+  .container-about {
+    justify-content: center;
+  }
+}
+.imagen {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
