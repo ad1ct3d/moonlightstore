@@ -1,7 +1,19 @@
 .homeBtn {
     text-align: center;
-    
 }
+
+.navBtn {
+    text-decoration: none;
+    color: nth($colores, 3);
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.6s;
+}
+
+.navBtn:hover {
+    
+    color: nth($colores, 2);
+}
+
 .navTxt {
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;

@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: nth($colores, 4);
+    @include horizontal-gradient(nth($colores, 5), nth($colores, 4));
 }
 
