@@ -8,12 +8,18 @@
 @import 'contact';
 @import 'gallery';
 @import 'store';
+@import 'slideshow';
+
+
+
 
 /*RESET*/
 body, html {
   margin:0;
   padding: 0;
   max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -49,15 +55,6 @@ $breakpoint-phone: 920px;
 
 }
 
-
-.img {
-  @extend %flexCenter;
-}
-
-.imagen {
-  max-width: 100%;
-  height: auto;
-}
   
 
 

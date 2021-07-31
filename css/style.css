@@ -1,6 +1,6 @@
 /*PALETA DE COLORES*/
 /*GRADIENTES*/
-/*compatibilidad*/
+/*compatibilidad de gradientes*/
 /*about us*/
 .container-about {
   width: 1000px;
@@ -115,12 +115,10 @@
 /*HOME*/
 #grid-main > div {
   height: 600px;
-  background: white;
-  border: 1px solid #aaa;
   box-sizing: border-box;
-  float: left;
   text-align: center;
   font-size: 30px;
+  margin: auto;
 }
 
 /* CONTENIDO */
@@ -148,7 +146,7 @@
 
 /* STORE */
 #grid-store > div {
-  height: 100%;
+  height: 90vh;
   background: white;
   border: 1px solid #aaa;
   box-sizing: border-box;
@@ -159,7 +157,7 @@
 
 /* GALERIA */
 #grid-gallery > div {
-  height: 100%;
+  height: 90vh;
   background: white;
   border: 1px solid #aaa;
   box-sizing: border-box;
@@ -170,9 +168,8 @@
 
 /* FOOTER */
 #grid-footer > div {
-  height: 150px;
+  height: 180px;
   color: white;
-  border: 1px solid #aaa;
   box-sizing: border-box;
   float: left;
   font-size: 20px;
@@ -253,6 +250,30 @@
   width: 33.3333333333%;
 }
 
+#grid.cell-4 > div {
+  width: 25%;
+}
+
+#grid-main.cell-4 > div {
+  width: 25%;
+}
+
+#grid-productos.cell-4 > div {
+  width: 25%;
+}
+
+#grid-store.cell-4 > div {
+  width: 25%;
+}
+
+#grid-gallery.cell-4 > div {
+  width: 25%;
+}
+
+#grid-footer.cell-4 > div {
+  width: 25%;
+}
+
 .section_about {
   display: flex;
   justify-content: center;
@@ -260,13 +281,15 @@
   flex-wrap: wrap;
 }
 
-.img {
-  display: felx;
-  justify-content: center;
-  align-items: center;
+.footer-real {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.footer-real {
+.footer-realExtendido {
+  position: relative;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -286,6 +309,30 @@
   background: linear-gradient(to right, #2d0752 0%, #650db8 100%);
   /* IE6-9 */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
+}
+
+.footer-real__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.footer-slogan {
+  padding: 10px;
+  word-wrap: break-word;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  font-family: "STIX Two Text", serif;
+  color: rgba(255, 255, 255, 0.767);
 }
 
 .homeBtn {
@@ -329,7 +376,6 @@ h4 {
   line-height: 1.5;
 }
 
-/* ///// inputs /////*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
   font-size: 0.75em;
   color: #999;
@@ -474,7 +520,7 @@ input[type=checkbox]:checked + label {
   top: 0;
   left: 0;
   pointer-events: none;
-  background: #252323 url(../img/loading.svg) no-repeat 50% 75px;
+  background: #a39898 url(../img/loading.svg) no-repeat 50% 75px;
   background-size: 60px auto;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
@@ -537,7 +583,7 @@ input[type=checkbox]:checked + label {
   width: 100vw;
   height: 100vh;
   opacity: 0;
-  background: #1f1d1d;
+  background: #ffe3e3;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
@@ -739,11 +785,62 @@ input[type=checkbox]:checked + label {
   box-sizing: border-box;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*RESET*/
 body, html {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -784,10 +881,6 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-}
-.imagen {
-  max-width: 100%;
-  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

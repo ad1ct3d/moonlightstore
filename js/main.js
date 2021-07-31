@@ -1,4 +1,10 @@
+
+
+
 /**
+ * 
+ * TODO ESTO SALIO DE GITHUB!!! ES EXCLUSIVAMENTE PARA LAS ANIMACIONES DE LA GALERIA
+ *  
  * main.js
  * http://www.codrops.com
  *
@@ -355,3 +361,4 @@
 	window.GridFx = GridFx;
 
 })(window);
+

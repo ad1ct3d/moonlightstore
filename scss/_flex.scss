@@ -1,17 +1,18 @@
+// flex en columnna
 %flexColumn {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
-
+// flex en fila
 %flexRow {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
+// solo centrar las cosas
 %flexCenter {
     display: felx;
     justify-content: center;

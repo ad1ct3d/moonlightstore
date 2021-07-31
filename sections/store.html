@@ -11,14 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap" rel="stylesheet"> 
 
     <title>Moonligh-tienda</title>
 </head>
 <body>
-
+    <!-- Navbar con icono en home -->
     <div id="grid" class="cell-3">
         <div>
             <a href="../index.html" class="homeBtn"><img class="logo" src="../img/logo-white.png" alt="logo" width="50px" height="50px"></a>
@@ -33,6 +32,7 @@
         </div>
     </div>
 
+    <!-- Los productos de la tienda por el momento son ilustrativos ya que seran generados por JS y todavía no tenemos los dados) -->
     <div id="grid-store" class="cell-1">
         <div class="store">
                 <ul class="products__list">
@@ -40,8 +40,8 @@
                         <div class="products__container">
                           <div class="card">
                             <img src="../img/miniature.jpg" alt="" style="width:100%">
-                            <h6 class="product__title">Golden elf</h6>
-                            <p class="price">$xxxx</p>
+                            <h6 class="product__title">Set clásico</h6>
+                            <p class="price">$2000</p>
                             <p><button>Comprar</button></p>
                           </div>
                         </div>
@@ -51,8 +51,8 @@
                         <div class="products__container">
                             <div class="card">
                               <img src="../img/monstruo.jpg" alt="" style="width:100%">
-                              <h6 class="product__title">Limb Taker</h6>
-                              <p class="price">$xxxx</p>
+                              <h6 class="product__title">Set especial</h6>
+                              <p class="price">$3000</p>
                               <p><button>Comprar</button></p>
                             </div>
                           </div>
@@ -62,67 +62,31 @@
                         <div class="products__container">
                             <div class="card">
                               <img src="../img/rata.jpg" alt="" style="width:100%">
-                              <h6 class="product__title">Big roddent</h6>
-                              <p class="price">$xxxx</p>
+                              <h6 class="product__title">set y miniatura</h6>
+                              <p class="price">$5000</p>
                               <p><button>Comprar</button></p>
                             </div>
                           </div>
-                    </li>
-            
-                    <li>
-                        <div class="products__container">
-                            <div class="card">
-                              <img src="../img/tremendo.jpg" alt="" style="width:100%">
-                              <h6 class="product__title">Hell Pirate</h6>
-                              <p class="price">$xxxx</p>
-                              <p><button>Comprar</button></p>
-                            </div>
-                          </div>
-                    </li>
-            
-                    <li>
-                        <div class="products__container">
-                            <div class="card">
-                              <img src="../img/warhammer.jpg" alt="" style="width:100%">
-                              <h6 class="product__title">Marine azul</h6>
-                              <p class="price">$xxxx</p>
-                              <p><button>Comprar</button></p>
-                            </div>
-                          </div>
-                    </li>
-            
-                    <li>
-                        <div class="products__container">
-                            <div class="card">
-                              <img src="../img/viejo.jpg" alt="" style="width:100%">
-                              <h6 class="product__title">cyber-vikingo</h6>
-                              <p class="price">$xxxx</p>
-                              <p><button>Comprar</button></p>
-                            </div>
-                          </div>
-                    </li>
-            
-                    <li>
-                        <div class="products__container">
-                            <div class="card">
-                              <img src="../img/franco.jpg" alt="" style="width:100%">
-                              <h6 class="product__title">Dead eye</h6>
-                              <p class="price">$xxxx</p>
-                              <p><button>Comprar</button></p>
-                            </div>
-                          </div>
-                    </li>       
+                    </li>      
             </ul>
         </div>
 
     </div>
 
-    <div id="grid-footer" class="cell-1">
-        <div class="footer-real">FOOTER</dv>
-    </div>
+    <!-- footer, lo minimo e indispensable por el momento. -->
+    <div id="grid-footer" class="cell-3">
+      <div class="footer-real__logo">
+          <img src="../img/logo-white.png" alt="isotipo" class="logo-footer">
+          <p class="footer-slogan">"Que tus fantasias lleguen al tablero"</p>
+      </div>
+
+      <div class="footer-real"></div>
+
+      <div class="footer-real">enlaces utiles</div>
+</div>
 
     </div>
-    <!--FOOTER FALSO-->
+  <!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
     <div class="footer">
     
 </body>

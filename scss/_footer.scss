@@ -1,7 +1,44 @@
+// estilo del footer
 .footer-real {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+//footer extendido para cuando el contenido de la pagina no llega a ocupar el 100% de pantalla
+.footer-realExtendido {
+    position: relative;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     @include horizontal-gradient(nth($colores, 5), nth($colores, 4));
 }
 
+
+// estilo del primer cuadrante del footer (logo y slogan)
+.footer-real__logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.footer-slogan {
+    padding: 10px;
+    word-wrap: break-word;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'STIX Two Text', serif;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+// estilo del tercer cuadrante del footer (enlaces)

@@ -11,10 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap" rel="stylesheet"> 
     <title>Moonlight</title>
 </head>
 
 <body>
+    <!-- Navbar con icono en home -->
     <div id="grid" class="cell-3">
         <div>
             <a href="index.html" class="homeBtn"><img class="logo" src="img/logo-white.png" alt="logo" width="50px" height="50px"></a>
@@ -29,15 +31,30 @@
         </div>
     </div>    
 
+    <!-- contenido principal de la pagina (una imagen de producto o un carrusel de los ultimos productos) -->
     <div id="grid-main" class="cell-1">
-        <div class="carrusel-container">
-            <div class="img">
-            <img src="img/dice-big.jpg" alt="placeholder" class="imagen">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- imagenes completas, cambia a la siguiente cada 5 seg -->
+            <div class="mySlides fade">
+                <img src="img/dice-big.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/greendicesetowahsed.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/escena2.jpg" style="width:100%">
+                <div class="text"></div>
             </div>
         </div>
-
     </div>
 
+    <!-- section de aboutUs, tres tarjetas que resumen en pocas palanbras nuestra actividad -->
     <div id="grid-productos" class="cell-1">
         <div class="about">
             <section class="section_about">
@@ -87,6 +104,7 @@
 
     </div>
 
+    <!-- Form de contacto (nombre, email, telefono y mensaje) -->
     <div id="grid-contact" class="cell-1">
         <div class="container-contact">
             <form action="enviar.php" method="POST" name="contact-form">
@@ -131,18 +149,24 @@
         </div>
         
     </div>
-<div class="footer">
-</div>
-    <div id="grid-footer" class="cell-1">
-            <div class="footer-real">
-                FOOTER
+
+    <!-- footer, lo minimo e indispensable por el momento. -->
+    <div id="grid-footer" class="cell-3">
+            <div class="footer-real__logo">
+                <img src="img/logo-white.png" alt="isotipo" class="logo-footer">
+                <p class="footer-slogan">"Que tus fantasias lleguen al tablero"</p>
             </div>
+
+            <div class="footer-real"></div>
+
+            <div class="footer-real">enlaces utiles</div>
     </div>
 
 </div>
-<!--FOOTER FALSO-->
-<div class="footer">
+<!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
+<div class="footer"></div>
 
-
+<script src="js/slideshow.js"></script>
+    
 </body>
 </html>
