@@ -9,6 +9,18 @@
     text-align: center;
     font-size: 30px;
   }
+
+  // titulos
+  #grid-title > div {
+    height: 300px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-image: url('../img/purple-background.jpg');
+    margin-bottom: 20px;
+  }
   
   /*HOME*/
   
@@ -20,28 +32,23 @@
     margin: auto;
   }
 
-  /* CONTENIDO */
-  
+  /* PRODUCTOS */
   #grid-productos > div {
-    height: 500px;
-    background: nth($colores, 3);
-    border: 1px solid #aaa;
+    min-height: 600px;
     box-sizing: border-box;
     float: left;
-    text-align: center;
-    font-size: 18px;
+    margin-bottom: 20px;
   }
+
 
   /* CONTACT */
   #grid-contact > div {
-    height: 1000px;
+    max-height: 1000px;
+    min-height: 833px;
     width: 100%;
     background: nth($colores, 3);
-    border: 1px solid #aaa;
     box-sizing: border-box;
     float: left;
-    text-align: center;
-    font-size: 18px;
   }
 
   /* STORE */
@@ -57,7 +64,7 @@
   /* GALERIA */
 
   #grid-gallery > div{
-    height: 90vh;
+    min-height: 800px;
     background: nth($colores, 3);
     border: 1px solid #aaa;
     box-sizing: border-box;
@@ -65,28 +72,64 @@
     text-align: center;
     font-size: 18px;
   }
+
+  // about us
+  #grid-cards > div {
+    min-height: 800px;
+    background: nth($colores, 3);
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  // faq
+  #grid-faq > div {
+    min-height: 750px;
+    box-sizing: border-box;
+    float: left;
+  }
   
   /* FOOTER */
 
+  #grid-footer {
+    min-height: 33vh;
+  }
+
+
   #grid-footer > div {
-    height: 180px;
+    position: relative;
+    bottom: 0;
+    min-height: 33vh;
+    background-color: nth($colores, 7);
     color: white;
     box-sizing: border-box;
     float: left;
     font-size: 20px;
-    position: relative;
-    bottom: 0;
   }
 
   /* CALCULOS */
+  $max: 6;
 
-  $max: 4;
   
   @for $i from 1 through $max {
   
     $equ: math.div(100%, $i);
   
     #grid.cell-#{ $i } > div {
+      width: $equ;
+    }
+
+    #grid-cards.cell-#{ $i } > div {
+      width: $equ;
+    }
+
+    #grid-title.cell-#{ $i } > div {
+      width: $equ;
+    }
+
+    #grid-contact.cell-#{ $i } > div {
       width: $equ;
     }
   
@@ -105,8 +148,66 @@
     #grid-gallery.cell-#{ $i } > div {
         width: $equ;
     }
-  
+
+    #grid-faq.cell-#{ $i } > div {
+      width: $equ;
+    }
+
     #grid-footer.cell-#{ $i } > div {
       width: $equ;
     }
-  }    
+  }
+
+  $map: ( 920:1 );
+
+  @each $key, $val in $map {
+    @media all and (max-width: $key + px){
+      @for $i from 1 through $val {
+  
+        $equ: math.div(100%, $i);
+      
+        #grid.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+    
+        #grid-cards.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+    
+        #grid-title.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+    
+        #grid-contact.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+          min-height: 400px;
+          text-align: center;
+        }
+      
+        #grid-main.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+      
+        #grid-productos.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+    
+        #grid-store.cell-#{$key}-#{ $i } > div {
+            width: $equ;
+          }
+    
+        #grid-gallery.cell-#{$key}-#{ $i } > div {
+            width: $equ;
+        }
+
+        #grid-faq.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+         }
+      
+        #grid-footer.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+      }
+    }
+  }
+  

@@ -1,12 +1,9 @@
-h1 {
-    font-family: 'Poppins', sans-serif, 'arial';
-    font-weight: 600;
-    font-size: 72px;
-    color: white;
-    text-align: center;
+.container-contact {
+    padding: 15px;
 }
 
-h4 {
+
+.form-subtitulo {
     font-family: 'Roboto', sans-serif, 'arial';
     font-weight: 400;
     font-size: 20px;
@@ -124,4 +121,25 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
+}
+
+label {
+    font-family: 'Roboto', sans-serif, 'arial';
+}
+
+.contact-data {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+    padding: 13px;
+
+    .contact-data__email {
+        font-size: 17px;
+    }
+
+    .contact-data__icon {
+        text-align: center;
+    }
+    
 }

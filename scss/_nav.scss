@@ -1,13 +1,15 @@
 // estilo del navbar
-.homeBtn {
-    text-align: center;
+.navbar {
+    background-color: white;
 }
 
 .navBtn {
     text-decoration: none;
-    color: nth($colores, 3);
+    color: nth($colores, 1);
     font-family: 'Montserrat', sans-serif;
     transition: 0.6s;
+    text-align: center;
+    
 }
 
 .navBtn:hover {

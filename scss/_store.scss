@@ -1,16 +1,16 @@
 // estilo de la tienda (TENER MUY EN CUENTA LAS CLASSES PARA EL JS)
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 300px;
-	margin: auto;
+	min-width: 225px;
 	text-align: center;
 	font-family: arial;
     background-color: rgb(211, 211, 211);
+	margin: 20px;
   }
 
   .product__title
   {
-	  font-size: 45px;
+	  font-size: 25px;
 	  
   }
   
@@ -43,12 +43,5 @@
 	margin: 25px;
 }
 
-.products__list
-{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 
 * {box-sizing: border-box;}

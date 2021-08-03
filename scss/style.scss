@@ -9,6 +9,7 @@
 @import 'gallery';
 @import 'store';
 @import 'slideshow';
+@import 'faq';
 
 
 
@@ -18,19 +19,24 @@ body, html {
   margin:0;
   padding: 0;
   max-width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
+  min-height: 100vh;
 }
 
+// barrita para que cuando la pagina sea muy larga no corra el contenido hacia la izq
 body {
-  @include horizontal-gradient(nth($colores, 6), nth($colores, 4));
+  overflow-y: scroll;
 }
+
+// body {
+//   @include horizontal-gradient(nth($colores, 6), nth($colores, 4));
+// }
 
 
 .section_about {
   @extend %flexRow;
 
 }
+
 
 /*RESPONSIVE*/
 
@@ -43,7 +49,7 @@ $breakpoint-phone: 920px;
     justify-content: center;
   }
   /*cards responsive*/
-  #grid-productos > div {
+  #grid-cards > div {
     height: 1200px;
   }
 
@@ -53,8 +59,13 @@ $breakpoint-phone: 920px;
     flex-direction: column;
   }
 
+
 }
 
+#grid-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
   
 
 

@@ -6,38 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
-    <!--FONTS-->
+    <!-- meta etiquetas / SEO -->
+    <meta name="description" content="Somos moonlight. Una tienda de dados artesanales y miniaturas para juegos de rol">
+    <!-- keywords -->
+    <meta name="keywords" content="moonlight, dados, d&d, D&D, dungeons, dragons, dice, artisan, dice, artesanales, personalizado, unicos, miniaturas, minis, rol, juegos, juguetes">
+
+
+    <!-- FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap" rel="stylesheet"> 
-    <title>Moonlight</title>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Moonlight - dados artesanales</title>
 </head>
 
 <body>
     <!-- Navbar con icono en home -->
-    <div id="grid" class="cell-3">
-        <div>
-            <a href="index.html" class="homeBtn"><img class="logo" src="img/logo-white.png" alt="logo" width="50px" height="50px"></a>
+    <div id="grid" class="cell-5">
+        <div class="navbar">
+            <a href="index.html" class="navBtn"><img class="logo" src="img/logo-black.png" alt="logo" width="50px" height="50px"></a>
         </div>
 
-        <div>
-            <a href="sections/store.html" class="navBtn"><h3 class="navTxt">Tienda</h3></a>
+        <div class="navbar">
+            <a href="sections/archive.html" class="navBtn"><h5 class="navTxt">Archivo</h3></a>
         </div>
         
-        <div>
-            <a href="sections/gallery.html" class="navBtn"><h3 class="navTxt">Galeria</h3></a>
+        <div class="navbar">
+            <a href="sections/aboutUs.html" class="navBtn"><h5 class="navTxt">Nosotors</h3></a>
         </div>
-    </div>    
+
+        <div class="navbar">
+            <a href="sections/faq.html" class="navBtn"><h5 class="navTxt">FAQ</h5></a>
+        </div>
+
+        <div class="navbar">
+            <a href="sections/contact.html" class="navBtn"><h5 class="navTxt">Contacto</h5></a>
+        </div>
+    </div>
+
+    <!-- titulo de seccion - PRODUCTOS A LA VENTA -->
+    <div id="grid-title" class="cell-1">
+        <div class="title-store">
+            <h1>TIENDA</h1>
+        </div>
+    </div>
 
     <!-- contenido principal de la pagina (una imagen de producto o un carrusel de los ultimos productos) -->
-    <div id="grid-main" class="cell-1">
+    <!-- <div id="grid-main" class="cell-1"> -->
         <!-- Slideshow container -->
-        <div class="slideshow-container">
-
+        <!-- <div class="slideshow-container"> -->
             <!-- imagenes completas, cambia a la siguiente cada 5 seg -->
-            <div class="mySlides fade">
+            <!-- <div class="mySlides fade">
                 <img src="img/dice-big.jpg" style="width:100%">
                 <div class="text"></div>
             </div>
@@ -52,103 +73,78 @@
                 <div class="text"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- section de aboutUs, tres tarjetas que resumen en pocas palanbras nuestra actividad -->
-    <div id="grid-productos" class="cell-1">
-        <div class="about">
-            <section class="section_about">
-                <div class="container-about">
-                    <div class="card-about">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="img/3dPrinter.png">
-                                <h3 class="card-title">Impresiones 3D</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p class="card-text">Fabricamos nuestros moldes nosotros mismos en nuestro taller, facilitando traer nuevos diseños regularmente.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-about">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="img/design.png">
-                                <h3 class="card-title">Diseños únicos</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p class="card-text">Tenemos como objetivo traer los dados más originales que podamos, pero si no es suficiente te podes poner en contacto para pedirnos tus dados personalizados ;)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-about">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="img/shipping.png">
-                                <h3 class="card-title">Al alcance de tod@s</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p class="card-text">Queremos que puedas tener tus dados, no importa donde estés. Por esto trabajamos con varios medios de envío, garantizando envíos a todo el país.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div id="grid-productos" class="cell-4 cell-920-1">
+
+        <!-- row 1 -->
+        <div id="store-row1">
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
         </div>
 
+        <!-- row 2 -->
+        <div id="store-row2">
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+        </div>
+
+        <!-- row 3 -->
+        <div id="store-row3">
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+        </div>
+
+        <!-- row 4 -->
+        <div id="store-row4">
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+            <div class="card">
+                <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
+                <h6 class="product__title">Set clásico</h6>
+                <p class="price">$2000</p>
+                <p><button>Comprar</button></p>
+            </div>
+        </div>
     </div>
 
-    <!-- Form de contacto (nombre, email, telefono y mensaje) -->
-    <div id="grid-contact" class="cell-1">
-        <div class="container-contact">
-            <form action="enviar.php" method="POST" name="contact-form">
-                <div class="container">
-                    <div class="row">
-                            <h1>Ponete en contacto!</h1>
-                    </div>
-                    <div class="row">
-                            <h4 style="text-align:center">Dejanos tu mensaje :)</h4>
-                    </div>
-                    <div class="row input-container">
-                            <div class="col-xs-12">
-                                <div class="styled-input wide">
-                                    <input type="text" required />
-                                    <label>Nombre</label> 
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="styled-input">
-                                    <input type="text" required />
-                                    <label>Email</label> 
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="styled-input" style="float:right;">
-                                    <input type="text" required />
-                                    <label>numero de telefono</label> 
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="styled-input wide">
-                                    <textarea required></textarea>
-                                    <label>Mensaje</label>
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="btn-lrg submit-btn">Enviar</div>
-                            </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        
-    </div>
+  
+
+
 
     <!-- footer, lo minimo e indispensable por el momento. -->
     <div id="grid-footer" class="cell-3">
@@ -159,7 +155,12 @@
 
             <div class="footer-real"></div>
 
-            <div class="footer-real">enlaces utiles</div>
+            <div class="footer-real">
+                <h6><a href="#">FAQ</a></h6>
+                <h6></h6>
+                <h6></h6>
+                <h6 class="copyright">© 2021 Dante Rossi</h6>
+            </div>
     </div>
 
 </div>
