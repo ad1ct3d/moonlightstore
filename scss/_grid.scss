@@ -40,6 +40,19 @@
     margin-bottom: 20px;
   }
 
+  // pagina de producto
+  #grid-productPage > div {
+    text-align: center;
+    min-height: 64vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+
 
   /* CONTACT */
   #grid-contact > div {
@@ -141,6 +154,10 @@
       width: $equ;
     }
 
+    #grid-productPage.cell-#{ $i } > div {
+      width: $equ;
+    }
+
     #grid-store.cell-#{ $i } > div {
         width: $equ;
       }
@@ -189,6 +206,10 @@
         }
       
         #grid-productos.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+
+        #grid-productPage.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
     

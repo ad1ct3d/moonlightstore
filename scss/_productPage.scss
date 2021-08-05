@@ -1,0 +1,32 @@
+// leyout
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .productImg {
+      min-height: 500px;
+      min-width: 500px;
+    }
+}
+
+// estilo de la pagina de producto
+#productName {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#productDescription {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#productPrice {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cartBtn {
+    height: 40px;
+    min-width: 100%;
+}

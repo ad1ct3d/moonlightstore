@@ -140,6 +140,18 @@
   margin-bottom: 20px;
 }
 
+#grid-productPage > div {
+  text-align: center;
+  min-height: 64vh;
+  max-height: 100vh;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
 /* CONTACT */
 #grid-contact > div {
   max-height: 1000px;
@@ -229,6 +241,10 @@
   width: 100%;
 }
 
+#grid-productPage.cell-1 > div {
+  width: 100%;
+}
+
 #grid-store.cell-1 > div {
   width: 100%;
 }
@@ -266,6 +282,10 @@
 }
 
 #grid-productos.cell-2 > div {
+  width: 50%;
+}
+
+#grid-productPage.cell-2 > div {
   width: 50%;
 }
 
@@ -309,6 +329,10 @@
   width: 33.3333333333%;
 }
 
+#grid-productPage.cell-3 > div {
+  width: 33.3333333333%;
+}
+
 #grid-store.cell-3 > div {
   width: 33.3333333333%;
 }
@@ -346,6 +370,10 @@
 }
 
 #grid-productos.cell-4 > div {
+  width: 25%;
+}
+
+#grid-productPage.cell-4 > div {
   width: 25%;
 }
 
@@ -389,6 +417,10 @@
   width: 20%;
 }
 
+#grid-productPage.cell-5 > div {
+  width: 20%;
+}
+
 #grid-store.cell-5 > div {
   width: 20%;
 }
@@ -426,6 +458,10 @@
 }
 
 #grid-productos.cell-6 > div {
+  width: 16.6666666667%;
+}
+
+#grid-productPage.cell-6 > div {
   width: 16.6666666667%;
 }
 
@@ -472,6 +508,10 @@
     width: 100%;
   }
 
+  #grid-productPage.cell-920-1 > div {
+    width: 100%;
+  }
+
   #grid-store.cell-920-1 > div {
     width: 100%;
   }
@@ -500,6 +540,13 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-shrink: 3;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#footer-real__header {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer-realExtendido {
@@ -1068,6 +1115,36 @@ label {
   font-size: 17px;
 }
 
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productContainer .productImg {
+  min-height: 500px;
+  min-width: 500px;
+}
+
+#productName {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#productDescription {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
+#productPrice {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+#cartBtn {
+  height: 40px;
+  min-width: 100%;
+}
+
 /*RESET*/
 body, html {
   margin: 0;
@@ -1103,6 +1180,11 @@ body {
 #grid-title {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
