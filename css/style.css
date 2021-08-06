@@ -657,10 +657,6 @@
   background-color: white;
 }
 
-.navbar-icon .icon {
-  visibility: hidden;
-}
-
 body {
   font-family: "Lato", sans-serif;
   overflow: hidden;
@@ -700,6 +696,7 @@ body {
 .logo {
   text-align: center;
   margin: 0 auto;
+  padding-left: 35px;
 }
 
 .line1, .line2, .line3 {
@@ -774,19 +771,6 @@ body {
   color: black;
   cursor: pointer;
   transition: background-position 0.3s;
-}
-
-#main {
-  transition: margin-top 0.4s;
-  text-align: center;
-  margin: auto;
-  padding: 16px;
-  padding-bottom: 0;
-  font-size: 30px;
-}
-
-.logo {
-  padding-left: 35px;
 }
 
 .container-contact {
@@ -1202,72 +1186,17 @@ label {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  transition: 0.2s;
 }
 
 .card button:hover {
   opacity: 0.7;
 }
 
-.products__list li {
-  display: inline;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin: 25px;
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .faqQuest {
   margin-left: 30px;
   font-size: 20px;
@@ -1366,7 +1295,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,9 @@
     <!-- iconos -->
     <script src="https://use.fontawesome.com/81ff0b774d.js"></script>
 
+    <!-- descripcion -->
+    <meta name="description" content="Somos moonlight. Acá podes encontrar nuestros enlaces de contacto, redes sociales, o mandarnos un mensaje!">
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +23,7 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Contacto - moonlight</title>
+    <title>moonlight - contacto</title>
 </head>
 <body>
     <!-- Navbar con icono en home -->
@@ -46,17 +49,19 @@
         </div>
     </div>
 
-    <!-- navbar -->
+    <!-- navbar para mobile y pantallas chicas (920px o menos)-->
     <div id="topNav" class="navigation">
+        <!-- botón -->
         <span id="closebtn" onclick="navToggle()">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
         </span>
+        <!-- logo -->
       <div class="logo">
         <img src="../img/logo-black.png" width="50px" height="50px" />
       </div>
-      
+      <!-- menu -->
       <ul class="menulist">
         <li><a class="menuitems" href="../index.html">Inicio</a></li>		
         <li><a class="menuitems" href="archive.html">Archivio</a></li>				
@@ -75,7 +80,7 @@
 
     <!-- Form de contacto (nombre, email, telefono y mensaje) -->
     <div id="grid-contact" class="cell-2  cell-920-1">
-        <!-- redes y cosas -->
+        <!-- redes y otros datos importantes -->
         <div class="contact-data">
             Saludanos
 
@@ -93,42 +98,43 @@
                             <h4 class="form-subtitulo" style="text-align:center">Dejanos tu mensaje :)</h4>
                     </div>
                     <div class="row input-container">
-                            <div class="col-xs-12">
-                                <div class="styled-input wide">
-                                    <input type="text" required />
-                                    <label>Nombre</label> 
-                                </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <input type="text" required />
+                                <label>Nombre</label> 
                             </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="styled-input wide">
-                                    <input type="text" required />
-                                    <label>Email</label> 
-                                </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input wide">
+                                <input type="text" required />
+                                <label>Email</label> 
                             </div>
-                            <div class="col-xs-12">
-                                <div class="styled-input wide">
-                                    <textarea required></textarea>
-                                    <label>Mensaje</label>
-                                </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea required></textarea>
+                                <label>Mensaje</label>
                             </div>
-                            <div class="col-xs-12">
-                                <div class="btn-lrg submit-btn">Enviar</div>
-                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="btn-lrg submit-btn">Enviar</div>
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- footer, lo minimo e indispensable por el momento. -->
+    <!-- footer - grid de 3 secciones -->
+    <!-- seccion 1 - isotipo y slogan -->
     <div id="grid-footer" class="cell-3">
         <div class="footer-real__logo">
             <img src="../img/logo-white.png" alt="isotipo" class="logo-footer">
             <p class="footer-slogan">"Que tus fantasias lleguen al tablero"</p>
         </div>
-
+        <!-- seccion 2 - vacio -->
         <div class="footer-real"></div>
-
+        <!-- seccion 3 - enlaces y copyright -->
         <div class="footer-real">
             <h6 id="footer-real__header">Enlaces útiles</h6>
             <a href="faq.html">FAQ</a>
@@ -138,10 +144,9 @@
         </div>
     </div>
 
-</div>
-<!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
-<div class="footer"></div>
-
-<script src="../js/navbar.js"></script>
+    <!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
+    <div class="footer"></div>
+    <!-- script del navbar para mobile y pantallas chicas -->
+    <script src="../js/navbar.js"></script>
 </body>
 </html>

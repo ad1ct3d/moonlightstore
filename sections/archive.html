@@ -11,16 +11,19 @@
 	<link rel="stylesheet" type="text/css" href="../css/style6.css" />
 	<script src="../js/modernizr-custom.js"></script>
 
+    <!-- descripcion -->
+    <meta name="description" content="Somos moonlight. Acá podes ver todos los productos y proyectos en los que trabajamos.">
+
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap" rel="stylesheet"> 
 
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Moonlight-galeria</title>
+    <title>Moonlight - galeria</title>
 </head>
 <body>
     <!-- Navbar con icono en home -->
@@ -46,17 +49,19 @@
         </div>
     </div>
 
-    <!-- navbar -->
+    <!-- navbar para mobile y pantallas chicas (920px o menos)-->
     <div id="topNav" class="navigation">
+        <!-- botón -->
         <span id="closebtn" onclick="navToggle()">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
         </span>
+        <!-- logo -->
       <div class="logo">
         <img src="../img/logo-black.png" width="50px" height="50px" />
       </div>
-      
+      <!-- menu -->
       <ul class="menulist">
         <li><a class="menuitems" href="../index.html">Inicio</a></li>		
         <li><a class="menuitems" href="archive.html">Archivio</a></li>				
@@ -146,13 +151,13 @@
         </div>
     </div>
 
+    <!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
     <div class="footer">
-  <!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
     </div>
     
 
     <!-- SCRIPTS PARA LA GALERIA -->
-<script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
 	<script src="../js/masonry.pkgd.min.js"></script>
 	<script src="../js/classie.js"></script>
 	<script src="../js/main.js"></script>
@@ -221,6 +226,7 @@
 		})();
 	</script>
 
-<script src="../js/navbar.js"></script>
+    <!-- script del navbar para mobile y pantallas chicas -->
+    <script src="../js/navbar.js"></script>
 </body>
 </html>

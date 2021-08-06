@@ -1,4 +1,6 @@
 // estilo de la tienda (TENER MUY EN CUENTA LAS CLASSES PARA EL JS)
+
+// tarjeta
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	min-width: 225px;
@@ -6,42 +8,39 @@
 	font-family: arial;
     background-color: rgb(211, 211, 211);
 	margin: 20px;
-  }
-
-  .product__title
-  {
-	  font-size: 25px;
-	  
-  }
-  
-  .price {
-	color: grey;
-	font-size: 22px;
-  }
-  
-  .card button {
-	border: none;
-	outline: 0;
-	padding: 12px;
-	color: white;
-	background-color: #000;
-	text-align: center;
-	cursor: pointer;
-	width: 100%;
-	font-size: 18px;
-  }
-  
-  .card button:hover {
-	opacity: 0.7;
-  }
-
-.products__list li
-{
-	display: inline;
-	padding-left: 2px;
-	padding-right: 2px;
-	margin: 25px;
 }
+
+// titulo
+.product__title
+{
+	font-size: 25px;
+	
+}
+
+// precio
+.price {
+color: grey;
+font-size: 22px;
+}
+
+// boton de compra
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+transition: 0.2s;
+}
+// animacion de boton de compra
+.card button:hover {
+opacity: 0.7;
+}
+
 
 
 * {box-sizing: border-box;}

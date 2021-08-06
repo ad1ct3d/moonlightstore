@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- meta etiquetas / SEO -->
-    <meta name="description" content="Somos moonlight. Una tienda de dados artesanales y miniaturas para juegos de rol">
+
+    <!-- descripcion -->
+    <meta name="description" content="Somos moonlight. Una tienda de dados artesanales y miniaturas para juegos de rol. ¿Estás buscando ese dado para poder enfrentarte al BBEG? Tu búsqueda terminó, entrá y buscá lo que te pertenece.">
     <!-- keywords -->
     <meta name="keywords" content="moonlight, dados, d&d, D&D, dungeons, dragons, dice, artisan, dice, artesanales, personalizado, unicos, miniaturas, minis, rol, juegos, juguetes">
-
 
     <!-- FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Moonlight - dados artesanales</title>
+    <title>Moonlight</title>
 </head>
 
 <body>
@@ -50,17 +51,21 @@
         </div>
     </div>
 
-    <!-- navbar -->
+    <!-- navbar para mobile y pantallas chicas (920px o menos) -->
     <div id="topNav" class="navigation">
+        <!-- botón -->
         <span id="closebtn" onclick="navToggle()">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
         </span>
+
+        <!-- logo -->
       <div class="logo">
         <img src="img/logo-black.png" width="50px" height="50px" />
       </div>
       
+      <!-- menu -->
       <ul class="menulist">
         <li><a class="menuitems" href="index.html">Inicio</a></li>		
         <li><a class="menuitems" href="sections/archive.html">Archivio</a></li>				
@@ -78,31 +83,11 @@
         </div>
     </div>
 
-    <!-- contenido principal de la pagina (una imagen de producto o un carrusel de los ultimos productos) -->
-    <!-- <div id="grid-main" class="cell-1"> -->
-        <!-- Slideshow container -->
-        <!-- <div class="slideshow-container"> -->
-            <!-- imagenes completas, cambia a la siguiente cada 5 seg -->
-            <!-- <div class="mySlides fade">
-                <img src="img/dice-big.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-        
-            <div class="mySlides fade">
-                <img src="img/greendicesetowahsed.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-        
-            <div class="mySlides fade">
-                <img src="img/escena2.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-        </div>
-    </div> -->
-
+    <!--  grid productos a la venta 
+            IMPORTANTE: tener en cuenta que al cambiar laorientacion de la pagina cambia el orden de los productos (vertical: mismo orden que en el codigo. Horizontal: cada columna es vertical)-->
     <div id="grid-productos" class="cell-4 cell-920-1">
 
-        <!-- row 1 -->
+        <!-- column 1 -->
         <div id="store-row1">
             <div class="card">
                 <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
@@ -110,6 +95,7 @@
                 <p class="price">$2000</p>
                 <p> <a href="sections/productPage.html"><button>Comprar</button></a></p>
             </div>
+
             <div class="card">
                 <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
                 <h6 class="product__title">Set clásico</h6>
@@ -118,7 +104,7 @@
             </div>
         </div>
         
-        <!-- row 2 -->
+        <!-- column 2 -->
         <div id="store-row2">
             <div class="card">
                 <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
@@ -126,6 +112,7 @@
                 <p class="price">$2000</p>
                 <p> <a href="sections/productPage.html"><button>Comprar</button></a></p>
             </div>
+
             <div class="card">
                 <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
                 <h6 class="product__title">Set clásico</h6>
@@ -134,7 +121,7 @@
             </div>
         </div>
 
-        <!-- row 3 -->
+        <!-- column 3 -->
         <div id="store-row3">
             <div class="card">
                 <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
@@ -150,7 +137,7 @@
             </div>
         </div>
 
-        <!-- row 4 -->
+        <!-- column 4 -->
         <div id="store-row4">
             <div class="card">
                 <img src="img/clasic-dice-set.jpg" alt="" style="width:100%">
@@ -167,19 +154,19 @@
         </div>
     </div>
 
-  
+    <!-- footer - grid de 3 secciones -->
 
-
-
-    <!-- footer, lo minimo e indispensable por el momento. -->
+    <!-- seccion 1 - isotipo y slogan -->
     <div id="grid-footer" class="cell-3">
         <div class="footer-real__logo">
             <img src="img/logo-white.png" alt="isotipo" class="logo-footer">
             <p class="footer-slogan">"Que tus fantasias lleguen al tablero"</p>
         </div>
 
+        <!-- seccion 2 - vacio -->
         <div class="footer-real"></div>
 
+        <!-- seccion 3 - enlaces y copyright -->
         <div class="footer-real">
             <h6 id="footer-real__header">Enlaces útiles</h6>
             <a href="sections/faq.html">FAQ</a>
@@ -188,10 +175,12 @@
             <h6 class="copyright">© 2021 Dante Rossi</h6>
         </div>
     </div>
-<!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
-<div class="footer"></div>
 
-<script src="js/navbar.js"></script>
-    
+
+    <!--FOOTER FALSO (esto es para que el host de la pagina no rompa el footer con su watermark)-->
+    <div class="footer"></div>
+
+    <!-- script del navbar para mobile y pantallas chicas -->
+    <script src="js/navbar.js"></script>
 </body>
 </html>

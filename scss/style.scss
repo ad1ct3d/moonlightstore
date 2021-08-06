@@ -8,7 +8,6 @@
 @import 'contact';
 @import 'gallery';
 @import 'store';
-@import 'slideshow';
 @import 'faq';
 @import 'productPage';
 
@@ -23,16 +22,11 @@ body, html {
   min-height: 100vh;
 }
 
-// barrita para que cuando la pagina sea muy larga no corra el contenido hacia la izq
+// scroll constante independientemente del largo de la pagina
 body {
   overflow-y: scroll;
   background-color: nth($colores, 7);
 }
-
-// body {
-//   @include horizontal-gradient(nth($colores, 6), nth($colores, 4));
-// }
-
 
 .section_about {
   @extend %flexRow;
@@ -84,8 +78,7 @@ $breakpoint-phone: 920px;
   
 a {
   text-decoration: none;
-  color: white;
-
+  color: black;
 }
 
 

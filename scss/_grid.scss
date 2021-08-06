@@ -110,12 +110,6 @@
   }
   
   /* FOOTER */
-
-  // #grid-footer {
-  //   min-height: 366px;
-  // }
-
-
   #grid-footer > div {
     position: relative;
     bottom: 0;
@@ -128,13 +122,15 @@
   }
 
   /* CALCULOS */
+
+  // cantidad máxima de columnas
   $max: 6;
 
-  
+  // dependiendo del nombre de la class de la seccion se indica cuantas columnas tiene el grid
   @for $i from 1 through $max {
   
     $equ: math.div(100%, $i);
-  
+    // navbar
     #grid.cell-#{ $i } > div {
       width: $equ;
     }
@@ -142,23 +138,23 @@
     #grid-cards.cell-#{ $i } > div {
       width: $equ;
     }
-
+    // titulos
     #grid-title.cell-#{ $i } > div {
       width: $equ;
     }
-
+    // contacto
     #grid-contact.cell-#{ $i } > div {
       width: $equ;
     }
-  
+    
     #grid-main.cell-#{ $i } > div {
       width: $equ;
     }
-  
+    // productos de home
     #grid-productos.cell-#{ $i } > div {
       width: $equ;
     }
-
+    // pagina de producto individual
     #grid-productPage.cell-#{ $i } > div {
       width: $equ;
     }
@@ -166,20 +162,25 @@
     #grid-store.cell-#{ $i } > div {
         width: $equ;
       }
-
+      // archivo
     #grid-gallery.cell-#{ $i } > div {
         width: $equ;
     }
-
+    // FAQ
     #grid-faq.cell-#{ $i } > div {
       width: $equ;
     }
-
+    // footer
     #grid-footer.cell-#{ $i } > div {
       width: $equ;
     }
   }
 
+
+
+  // RESPONSIVE cambiar la disposicion y cantidad de columnas del grid cuando la resolucion < o = 920px
+
+  // máximo de columnas cuando el tamaño de la pantalla es < o = a 920px
   $map: ( 920:2 );
 
   @each $key, $val in $map {
@@ -187,7 +188,7 @@
       @for $i from 1 through $val {
   
         $equ: math.div(100%, $i);
-      
+        // navbar (se oculta completamente para usar el navbar de mobile)
         #grid.cell-#{$key}-#{ $i } > div {
           width: $equ;
           display: none;
@@ -197,11 +198,11 @@
         #grid-cards.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
-    
+        // titulos (queda igual)
         #grid-title.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
-    
+        // contacto
         #grid-contact.cell-#{$key}-#{ $i } > div {
           width: $equ;
           min-height: 400px;
@@ -211,28 +212,28 @@
         #grid-main.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
-      
+        // productos de home (pasa a ser una columna entera)
         #grid-productos.cell-#{$key}-#{ $i } > div {
           width: $equ;
           margin-bottom: 0;
         }
-
+        // pagina de producto individual (pasa a tarjeta vertical)
         #grid-productPage.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
-    
+        
         #grid-store.cell-#{$key}-#{ $i } > div {
             width: $equ;
           }
-    
+        // archivo
         #grid-gallery.cell-#{$key}-#{ $i } > div {
             width: $equ;
         }
-
+        // FAQ (queda igual)
         #grid-faq.cell-#{$key}-#{ $i } > div {
           width: $equ;
          }
-      
+        //  footer (queda igual)
         #grid-footer.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
