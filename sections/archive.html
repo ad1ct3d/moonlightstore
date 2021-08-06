@@ -17,13 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap" rel="stylesheet"> 
 
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Moonlight-galeria</title>
 </head>
 <body>
     <!-- Navbar con icono en home -->
-    <div id="grid" class="cell-5">
+    <div id="grid" class="cell-5 cell-920-1">
         <div class="navbar">
-            <a href="../index.html" class="navBtn"><img class="logo" src="../img/logo-black.png" alt="logo" width="50px" height="50px"></a>
+            <a href="../index.html" class="navBtn-home"><img class="logo-home" src="../img/logo-black.png" alt="logo" width="50px" height="50px"></a>
         </div>
 
         <div class="navbar">
@@ -43,6 +46,26 @@
         </div>
     </div>
 
+    <!-- navbar -->
+    <div id="topNav" class="navigation">
+        <span id="closebtn" onclick="navToggle()">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </span>
+      <div class="logo">
+        <img src="../img/logo-black.png" width="50px" height="50px" />
+      </div>
+      
+      <ul class="menulist">
+        <li><a class="menuitems" href="../index.html">Inicio</a></li>		
+        <li><a class="menuitems" href="archive.html">Archivio</a></li>				
+        <li><a class="menuitems" href="aboutUs.html">Nosotors</a></li>
+        <li><a class="menuitems" href="faq.html">FAQ</a></li>
+        <li><a class="menuitems" href="contact.html">Contacto</a></li>
+      </ul>			
+    </div>
+
     <!-- titulo de seccion - CONTACTO -->
     <div id="grid-title" class="cell-1">
         <div class="title-store">
@@ -52,7 +75,6 @@
 
     <!-- GALERIA (donde se muestra los proyectos en los que trabajamos y nuestros ultimos productos) -->
     <div id="grid-gallery" class="cell-1">
-        <h1>PROYECTOS EN LOS QUE TRABAJAMOS</h1>
         <div class="container">
             <div class="content">
                 <div class="grid">
@@ -115,7 +137,13 @@
 
         <div class="footer-real"></div>
 
-        <div class="footer-real">enlaces utiles</div>
+        <div class="footer-real">
+            <h6 id="footer-real__header">Enlaces útiles</h6>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contacto</a>
+            <a href="aboutUs.html">Nosotros</a>
+            <h6 class="copyright">© 2021 Dante Rossi</h6>
+        </div>
     </div>
 
     <div class="footer">
@@ -192,5 +220,7 @@
 			});
 		})();
 	</script>
+
+<script src="../js/navbar.js"></script>
 </body>
 </html>

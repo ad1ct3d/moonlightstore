@@ -12,6 +12,7 @@
 
   // titulos
   #grid-title > div {
+    background-color: white;
     height: 300px;
     box-sizing: border-box;
     float: left;
@@ -25,6 +26,7 @@
   /*HOME*/
   
   #grid-main > div {
+    background-color: white;
     height: 600px;
     box-sizing: border-box;
     text-align: center;
@@ -34,6 +36,7 @@
 
   /* PRODUCTOS */
   #grid-productos > div {
+    background-color: white;
     min-height: 600px;
     box-sizing: border-box;
     float: left;
@@ -42,8 +45,9 @@
 
   // pagina de producto
   #grid-productPage > div {
+    background-color: white;
     text-align: center;
-    min-height: 64vh;
+    min-height: 1000px;
     max-height: 100vh;
     box-sizing: border-box;
     float: left;
@@ -99,6 +103,7 @@
 
   // faq
   #grid-faq > div {
+    background-color: white;
     min-height: 750px;
     box-sizing: border-box;
     float: left;
@@ -106,15 +111,15 @@
   
   /* FOOTER */
 
-  #grid-footer {
-    min-height: 33vh;
-  }
+  // #grid-footer {
+  //   min-height: 366px;
+  // }
 
 
   #grid-footer > div {
     position: relative;
     bottom: 0;
-    min-height: 33vh;
+    min-height: 366px;
     background-color: nth($colores, 7);
     color: white;
     box-sizing: border-box;
@@ -175,7 +180,7 @@
     }
   }
 
-  $map: ( 920:1 );
+  $map: ( 920:2 );
 
   @each $key, $val in $map {
     @media all and (max-width: $key + px){
@@ -185,7 +190,9 @@
       
         #grid.cell-#{$key}-#{ $i } > div {
           width: $equ;
+          display: none;
         }
+
     
         #grid-cards.cell-#{$key}-#{ $i } > div {
           width: $equ;
@@ -207,6 +214,7 @@
       
         #grid-productos.cell-#{$key}-#{ $i } > div {
           width: $equ;
+          margin-bottom: 0;
         }
 
         #grid-productPage.cell-#{$key}-#{ $i } > div {

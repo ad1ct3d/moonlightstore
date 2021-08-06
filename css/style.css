@@ -2,6 +2,7 @@
 /*GRADIENTES*/
 /*compatibilidad de gradientes*/
 /*about us*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 .container-about {
   width: 1000px;
   position: relative;
@@ -113,6 +114,7 @@
 }
 
 #grid-title > div {
+  background-color: white;
   height: 300px;
   box-sizing: border-box;
   float: left;
@@ -125,6 +127,7 @@
 
 /*HOME*/
 #grid-main > div {
+  background-color: white;
   height: 600px;
   box-sizing: border-box;
   text-align: center;
@@ -134,6 +137,7 @@
 
 /* PRODUCTOS */
 #grid-productos > div {
+  background-color: white;
   min-height: 600px;
   box-sizing: border-box;
   float: left;
@@ -141,8 +145,9 @@
 }
 
 #grid-productPage > div {
+  background-color: white;
   text-align: center;
-  min-height: 64vh;
+  min-height: 1000px;
   max-height: 100vh;
   box-sizing: border-box;
   float: left;
@@ -195,20 +200,17 @@
 }
 
 #grid-faq > div {
+  background-color: white;
   min-height: 750px;
   box-sizing: border-box;
   float: left;
 }
 
 /* FOOTER */
-#grid-footer {
-  min-height: 33vh;
-}
-
 #grid-footer > div {
   position: relative;
   bottom: 0;
-  min-height: 33vh;
+  min-height: 366px;
   background-color: #343235;
   color: white;
   box-sizing: border-box;
@@ -484,6 +486,7 @@
 @media all and (max-width: 920px) {
   #grid.cell-920-1 > div {
     width: 100%;
+    display: none;
   }
 
   #grid-cards.cell-920-1 > div {
@@ -506,6 +509,7 @@
 
   #grid-productos.cell-920-1 > div {
     width: 100%;
+    margin-bottom: 0;
   }
 
   #grid-productPage.cell-920-1 > div {
@@ -527,6 +531,54 @@
   #grid-footer.cell-920-1 > div {
     width: 100%;
   }
+
+  #grid.cell-920-2 > div {
+    width: 50%;
+    display: none;
+  }
+
+  #grid-cards.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-title.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-contact.cell-920-2 > div {
+    width: 50%;
+    min-height: 400px;
+    text-align: center;
+  }
+
+  #grid-main.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-productos.cell-920-2 > div {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  #grid-productPage.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-store.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-gallery.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-faq.cell-920-2 > div {
+    width: 50%;
+  }
+
+  #grid-footer.cell-920-2 > div {
+    width: 50%;
+  }
 }
 .section_about {
   display: flex;
@@ -547,30 +599,6 @@
 #footer-real__header {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-}
-
-.footer-realExtendido {
-  position: relative;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* fallback/image non-cover color */
-  background-color: #2d0752;
-  /* Firefox 3.6+ */
-  background-image: -moz-linear-gradient(left, #2d0752 0%, #650db8 100%);
-  /* Safari 4+, Chrome 1+ */
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #2d0752), color-stop(100%, #650db8));
-  /* Safari 5.1+, Chrome 10+ */
-  background-image: -webkit-linear-gradient(left, #2d0752 0%, #650db8 100%);
-  /* Opera 11.10+ */
-  background-image: -o-linear-gradient(left, #2d0752 0%, #650db8 100%);
-  /* IE10+ */
-  background: -ms-linear-gradient(left, #2d0752 0%, #650db8 100%);
-  /* Standard */
-  background: linear-gradient(to right, #2d0752 0%, #650db8 100%);
-  /* IE6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
 }
 
 .footer-real__logo {
@@ -617,10 +645,148 @@
   margin-top: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 23px;
+  margin-bottom: 0;
+  color: black;
 }
 
 .logo {
   padding-top: 5px;
+}
+
+.navbar-icon {
+  background-color: white;
+}
+
+.navbar-icon .icon {
+  visibility: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+
+.navigation {
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 4px -3px #232323;
+  -moz-box-shadow: 0 4px 4px -3px #232323;
+  -webkit-box-shadow: 0 4px 4px -3px #232323;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  padding-top: 0px;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation ul {
+  margin-top: 30px;
+  text-align: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menulist {
+  width: 200px;
+}
+
+.logo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.line1, .line2, .line3 {
+  margin-top: 5px;
+  background-color: black;
+  width: 25px;
+  height: 3px;
+  display: block;
+  position: relative;
+  opacity: 1;
+  border-radius: 15%;
+  transition: all 0.3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity: 0;
+  background-color: black;
+  top: 5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color: black;
+  top: -7px;
+}
+
+.menuitems {
+  padding-top: 12px;
+  padding-bottom: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: black;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuitems:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.2s;
+}
+
+.menuitems:hover::after {
+  width: 100%;
+}
+
+#closebtn {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  text-decoration: none;
+  top: 10px;
+  left: 25px;
+  font-size: 36px !important;
+  margin-right: 50px;
+  z-index: 100;
+  color: black;
+  cursor: pointer;
+  transition: background-position 0.3s;
+}
+
+#main {
+  transition: margin-top 0.4s;
+  text-align: center;
+  margin: auto;
+  padding: 16px;
+  padding-bottom: 0;
+  font-size: 30px;
+}
+
+.logo {
+  padding-left: 35px;
 }
 
 .container-contact {
@@ -956,14 +1122,12 @@ label {
   padding: 0;
   cursor: pointer;
   vertical-align: top;
-  color: #6bd68a;
   border: none;
   background: none;
 }
 
 .action:hover,
 .action:focus {
-  color: #6bd68a;
   outline: none;
 }
 
@@ -1107,12 +1271,14 @@ label {
 .faqQuest {
   margin-left: 30px;
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .faqAns {
   margin-left: 35px;
   margin-right: 25px;
   font-size: 17px;
+  font-family: "Roboto", sans-serif;
 }
 
 .productContainer {
@@ -1155,6 +1321,13 @@ body, html {
 
 body {
   overflow-y: scroll;
+  background-color: #343235;
+}
+
+.title-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*RESPONSIVE*/
@@ -1175,6 +1348,15 @@ body {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+@media (min-width: 920px) {
+  #topNav {
+    display: none;
   }
 }
 #grid-title {
