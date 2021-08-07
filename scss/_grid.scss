@@ -90,15 +90,35 @@
     font-size: 18px;
   }
 
-  // about us
+  // ABOUT US
+  #grid-aboutUs-imgs {
+    background-color: white;
+    min-height: 400px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+
   #grid-cards > div {
-    min-height: 800px;
+    min-height: 400px;
     background: nth($colores, 3);
-    border: 1px solid #aaa;
     box-sizing: border-box;
     float: left;
     text-align: center;
     font-size: 18px;
+  }
+
+  #grid-aboutUs-description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 330px;
+    max-height: auto;
+    float: left;
+    background-color: white;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   // faq
@@ -135,13 +155,24 @@
       width: $equ;
     }
 
+    // aboutUs
+    #grid-aboutUs-imgs.cell-#{ $i } > div {
+      width: $equ;
+    }
+
     #grid-cards.cell-#{ $i } > div {
       width: $equ;
     }
+
+    #grid-aboutUs-description.cell-#{ $i } > div {
+      width: $equ;
+    }
+
     // titulos
     #grid-title.cell-#{ $i } > div {
       width: $equ;
     }
+
     // contacto
     #grid-contact.cell-#{ $i } > div {
       width: $equ;
@@ -194,14 +225,26 @@
           display: none;
         }
 
-    
+        // about us
+
         #grid-cards.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
+
+        #grid-aboutUs-imgs.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+          max-height: 800px;
+        }
+
+        #grid-aboutUs-description.cell-#{$key}-#{ $i } > div {
+          width: $equ;
+        }
+
         // titulos (queda igual)
         #grid-title.cell-#{$key}-#{ $i } > div {
           width: $equ;
         }
+
         // contacto
         #grid-contact.cell-#{$key}-#{ $i } > div {
           width: $equ;

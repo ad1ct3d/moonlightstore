@@ -1,6 +1,6 @@
 @use 'sass:math';
 @import 'colors';
-@import 'cards';
+@import 'aboutUs';
 @import 'grid';
 @import 'flex';
 @import 'footer';
@@ -58,6 +58,14 @@ $breakpoint-phone: 920px;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .aboutUs-imgsContainer {
+    flex-direction: column;
+
+    .aboutUs-imgs {
+      padding-top: 20px;
+    }
   }
 
   .icon {
